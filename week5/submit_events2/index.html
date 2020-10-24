@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+    <form name="details">
+        <div class="box1">
+            <div id="fname"><input type="text" name="fname" placeholder="FIRST NAME"></div><br>
+            <div id="lname"><input type="text" name="lname" placeholder="LAST NAME"></div><br>
+            <div id="age"><input type="number" name="age" placeholder="AGE"></div><br>
+
+            <div id="gender" name="genderbox">
+                Please choose a gender:<br>
+                Male: <input type="checkbox" name="mgender"/>
+                Female: <input type="checkbox" name="fgender"/>
+                Decline to Answer: <input type="checkbox" name=“nogender”/><br><br>
+            </div>
+
+            <div id="locations" name="locations">
+                Please select a travel location:<br>
+                <select>
+                    <option>Orlando</option>
+                    <option>New York</option>
+                    <option>Atlanta</option>
+                    <option>Los Angeles</option>
+                </select><br><br>
+            </div>
+
+            <div id="diet" name="restrict">
+                Please select any dietary restrictions:<br>
+                Nut Free: <input type="checkbox" name=“diet”/>
+                Gluten Free: <input type="checkbox" name=“diet”/>
+                Vegetarian: <input type="checkbox" name=“diet”/>
+                N/A: <input type="checkbox" name=“diet”/>
+            </div>
+        
+            <div id="sub-button"><button onclick="getdetails();">submit</button></div>
+        </div>
+    </form>
+
+    <script src="submit.js"></script>
+</body>
+</html>
