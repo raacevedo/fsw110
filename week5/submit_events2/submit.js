@@ -1,29 +1,37 @@
-function getdetails()
-{
-var fname = document.details.fname.value;
-var lname = document.details.lname.value;
-var age = document.details.age.value;
-var gender = document.details.genderbox.value;
-var locations = document.details.locations.value;
-var diet = document.details.diet;
+var form = document.getElementById("details");
+var submits = document.getElementById("sub-button")
 
-var items = document.getElementsByClassName("diet");
-console.log(document.getElementsByClassName("diet"))
-var food =""
-for (var i=0; i < document.getElementsByClassName("diet").length;i++){
-    console.log(document.getElementsByClassName("diet")[i].checked)
-    if(document.getElementsByClassName("diet")[i].checked){
-        food+=document.getElementsByClassName("diet")[i].value+" "
-    }
+function getdetails(){
+
+var fname = document.details["fname"].value;
+var lname = document.details["lname"].value;
+var age = document.details["age"].value;
+var gender = document.details["gender"].value;
+var locations = document.details["locations"].value;
+var diets = "";
+
+
+if (document.getElementById("nut").checked) {
+    diets += document.getElementById("nut").value
+}
+if (document.getElementById("gluten").checked) {
+    diets += document.getElementById("gluten").value
+}
+if (document.getElementById("veggie").checked) {
+    diets += document.getElementById("veggie").value
+}
+if (document.getElementById("na").checked){
+    diets += document.getElementById("na").value
 }
 
-// console.log(food)
-alert("FIRST NAME: " +fname+" \n "+"LAST NAME: "+lname+" \n "+"AGE: "+age+" \n "+"GENDER: "+gender+" \n "+"LOCATION: "+locations+" \n "+"DIET: "+diet);
+console.log(diets)
+alert("FIRST NAME: " +fname+" \n "+"LAST NAME: "+lname+" \n "+"AGE: "+age+" \n "+"GENDER: "+gender+" \n "+"LOCATION: "+locations+" \n "+"DIET: "+diets);
+//form.reset()
 }
-
-const form = document.details
-
-// form.addEventListener("submit",(event)=>{
+// const form = document.details
+// form.addEventListener("submit", (event) => {
 //     event.preventDefault()
-//     display()
+//  getdetails()
 // })
+
+//submits.addEventListener("click", formAlert);

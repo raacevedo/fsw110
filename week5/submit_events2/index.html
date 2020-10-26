@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html>
-<head></head>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-    <form name="details">
-        <div class="box1">
-            <div id="fname"><input type="text" name="fname" placeholder="FIRST NAME"></div><br>
-            <div id="lname"><input type="text" name="lname" placeholder="LAST NAME"></div><br>
-            <div id="age"><input type="number" name="age" placeholder="AGE"></div><br>
+    <form id="details" name="details">
+        <div class="one">
+            <h1>Goodtimes Airlines</h1>
+            <div><input type="text" name="fname" placeholder="FIRST NAME"></div><br>
+            <div><input type="text" name="lname" placeholder="LAST NAME"></div><br>
+            <div><input type="number" name="age" placeholder="AGE"></div><br>
 
-            <div id="gender" name="genderbox">
-                Please choose a gender:<br>
-                Male: <input type="checkbox" name="mgender"/>
-                Female: <input type="checkbox" name="fgender"/>
-                Decline to Answer: <input type="checkbox" name=“nogender”/><br><br>
+            <div id="gender">
+                <p class="label">Please choose a gender:</p><br>
+                Male: <input type="radio" value="Male" name="gender"/>
+                Female: <input type="radio"  value="Female" name="gender"/>
+                Decline to Answer: <input type="radio"  value="none" name=“gender”/><br><br>
             </div>
 
-            <div id="locations" name="locations">
-                Please select a travel location:<br>
-                <select>
-                    <option>Orlando</option>
-                    <option>New York</option>
-                    <option>Atlanta</option>
-                    <option>Los Angeles</option>
+            <div>
+                <p class="label">Please select a travel location:</p><br>
+                <select name="locations">
+                    <option value="Orlando">Orlando</option>
+                    <option value="New York">New York</option>
+                    <option value="Chicago">Chicago</option>
+                    <option value="Los Angeles">Los Angeles</option>
                 </select><br><br>
             </div>
 
-            <div id="diet" name="restrict">
-                Please select any dietary restrictions:<br>
-                Nut Free: <input type="checkbox" name=“diet”/>
-                Gluten Free: <input type="checkbox" name=“diet”/>
-                Vegetarian: <input type="checkbox" name=“diet”/>
-                N/A: <input type="checkbox" name=“diet”/>
+            <div>
+                <p class="label">Please select any dietary restrictions:</p><br>
+                Nut Free: <input id="nut" type="checkbox" value="Nut Free" name=“nutFree”/>
+                Gluten Free: <input id="gluten" type="checkbox" value="Gluten Free" name=“glutenFree”/>
+                Vegetarian: <input id="veggie" type="checkbox" value="Vegetarian" name=“vegetarian”/>
+                N/A: <input id="na" type="checkbox" value="N/A" name=“na”/>
             </div>
         
             <div id="sub-button"><button onclick="getdetails();">submit</button></div>
