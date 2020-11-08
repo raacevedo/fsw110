@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href= "styles.css">
+    </head>
+    <body>
+        <div class="topnav">
+            <ul class="nav">
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+        <header class="header"> 
+            <div>
+                <p> Welcome to Mario's Pest Control!</p>
+            </div>  
+            
+        </header>
+
+            <div class="grid-container">
+            <div class="row">
+                <div class="column">
+                    <h1>Goomba $5</h1>
+                    <p><img src="http://www.superluigibros.com/images/media/artwork/3ds/new_super_mario_bros_2/large/Enemies_and_Bosses/Goomba_2.png" width="200" height="200" ></p>
+                    <label>Quantity: </label><input type="text" id="quantityGoombas" value="0"> <label>Goombas</label>
+                </div>
+    
+                <div class="column">
+                    <h1>Bob-ombs $7</h1>
+                    <p><img src="https://preview.free3d.com/img/2019/01/2174899143825163598/f2nzmat7-900.jpg" width="200" height="200"></p>
+                    <label>Quantity: </label><input type="text" id="quantityBobombs" value="0"> <label>Bob-ombs</label>
+                </div>
+    
+                <div class="column">
+                    <h1>Cheep-Cheeps $11</h1>
+                    <p><img src="https://www.models-resource.com/resources/big_icons/3/2308.png" width="200" height="200"></p>
+                    <label>Quantity: </label><input type="text" id="quantityCheepcheeps" value="0"> <label>Cheep-cheeps</label>
+                </div>
+                
+                <button type="submit" id="submitButton">Submit</button>
+                <p id="totalPrice"></p>
+                
+            </div>
+            </div>
+        
+            <footer id="footer">
+                <p id=footBox>
+                    Contact: marioremovespest@pestremoval.org | mariopestcontrol.com <br>
+                    Mario Bros. Headquarters<br>
+                    1991 Acorn Plains, Mushroom Kingdom D3S-6N4
+                </p>
+            </footer>
+        <script src="mario.js"></script>
+    </body>
+</html>

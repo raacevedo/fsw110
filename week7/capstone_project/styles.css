@@ -1,0 +1,43 @@
+body{
+    background-color: aqua;
+}
+
+header > h1 {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    text-align: center;
+}
+
+#image {
+    text-align: center;
+}
+
+.nav {
+    text-align: center;
+    padding: 10px;
+}
+
+.table {
+    text-align: center;
+    border:solid 2px black;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.todo{
+    text-align: center;
+}
+
+.aside{
+    text-align: center;
+}
